@@ -1,0 +1,14 @@
+/* Minimal styling for split view */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+pre {
+  background: #fafafa;
+  color: #333;
+  font-size: 1em;
+}
+.markdown-body {
+  font-size: 1em;
+  color: #222;
+}
