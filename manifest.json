@@ -1,14 +1,36 @@
 {
   "manifest_version": 3,
   "name": "Markdown Split Preview",
-  "version": "1.0",
-  "description": "Splits the tab and renders Markdown on the right when a .md file is opened.",
-  "permissions": ["scripting", "activeTab"],
+  "version": "1.1",
+  "description": "Splits the tab and renders Markdown on the right when a .md or .markdown file is opened.",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "file://*/*.md",
+    "file://*/*.markdown",
+    "http://*/*.md",
+    "https://*/*.md",
+    "http://*/*.markdown",
+    "https://*/*.markdown"
+  ],
   "content_scripts": [
     {
-      "matches": ["file://*/*.md", "file://*/*.markdown", "http://*/*.md", "https://*/*.md", "http://*/*.markdown", "https://*/*.markdown"],
-      "js": ["content.js", "marked.min.js"],
-      "css": ["styles.css"]
+      "matches": [
+        "file://*/*.md",
+        "file://*/*.markdown",
+        "http://*/*.md",
+        "https://*/*.md",
+        "http://*/*.markdown",
+        "https://*/*.markdown"
+      ],
+      "js": [
+        "marked.min.js",
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
     }
   ]
 }
