@@ -1,6 +1,6 @@
 # Markdown Split Preview Chrome Extension
 
-![Screenshot of Markdown Split Preview Chrome Extension](screenshot.png)
+![Screenshot](screenshot.png)
 
 A minimalistic Chrome extension that automatically splits the browser tab in two when you open a Markdown file (`.md` or `.markdown`), displaying the raw Markdown on the left and a live, beautifully rendered preview on the right. Features VS Code-like styling, dark/light mode support, and synchronized scrolling for a seamless reading and editing experience.
 
